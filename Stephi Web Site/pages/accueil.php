@@ -6,5 +6,9 @@
     $loader = new \Twig\Loader\FilesystemLoader('templates');
     $twig = new \Twig\Environment($loader);
     $template = $twig->load('menu.html.twig');
+    echo $template->render(array(
+
+    )); 
 
 ?>
+
