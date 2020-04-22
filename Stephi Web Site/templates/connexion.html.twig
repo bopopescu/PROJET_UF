@@ -1,0 +1,42 @@
+{% include 'header.html.twig' %}
+
+            <section class="container-fluid">		
+				<section class="row justify-content-center">
+					<section class="col-12 col-sm-12 col-md-6">
+						<img src="../contents/img/form_user/login.png" class="imglogin">
+							<form class="form-container" method="post" action="">							
+								<h4 class="text-center font-weight-bold">Connexion</h4>
+									<div class="form-group">
+										<input class="form-control" name="pseudo" type="text" id="pseudo" placeholder="Identifiant"/>
+									</div>
+									<div class="form-group">
+										<input class="form-control" type="password" name="password" id="password" placeholder="Mot de passe"/>
+									</div>
+									<div class="forgot">
+										<span class="text">
+											Mot de passe oublié ?
+										</span>
+										<a href="#" class="txt2">
+											CLiquez-ici 
+										</a>
+									</div>
+									
+										<button href="accueil.php" type="submit" class="btn btn-primary btn-block form">Connexion</button>
+									
+									<div class="newaccount">
+										<span class="text">
+											Pas encore de compte ? 
+										</span>
+										<a class="txt1" href="inscription.php" rel="nofollow noopener noreferrer" target="_blank">Inscrivez-vous maintenant</a>
+									</div>
+							
+							</form>
+					</section>
+				</section>
+			</section>		
+	
+
+
+
+
+{% include 'footer.html.twig' %}

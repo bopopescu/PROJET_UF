@@ -1,0 +1,95 @@
+{% include 'header.html.twig' %}
+
+
+    <section class="container-fluid">		
+		<section class="row justify-content-center">
+		    <section class="col-12 col-sm-12 col-md-6">
+				<img src="../contents/img/form_user/login.png" class="imglogin">
+					<form class="form-container" method="post" action="">							
+						<h4 class="text-center font-weight-bold">Inscription</h4>
+							<div class="form-group">                             
+                                <input class="form-control" name="nom" type="text" id="nom" placeholder="Nom"/>                           
+							</div>
+							<div class="form-group">
+								<input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prénom"/>
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="email" name="mail" id="mail" placeholder="Email"/>
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="password" name="password" id="password" placeholder="Mot de passe"/>
+                            </div>
+                            <div class="form-group inscription">
+                                <label for="gender">Civilité :</label>        
+                                <input class="form-control" type="radio" Name="Gender_male"   id="gender_male" Value="Male">
+                                <label for="gender">Mr.</label>
+                                <input class="form-control" type="radio" Name="Gender_female"  id="gender_female" Value="Female">
+                                <label for="gender">Mlle.</label>
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="text" name="adresse" id="adresse" placeholder="Adresse"/>
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="number" name="code_postal" id="code_postal" placeholder="Code postal"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pays">Pays :</label>      
+                                <select id="pays" name="pays" class="form-control">                                           
+                                    <option value="Argentina">Argentine</option>        
+                                    <option value="Australia">Australie</option>     
+                                    <option value="Belgium">Belgique</option>   
+                                    <option value="Benin">Benin</option>
+                                    <option value="Bolivia">Bolivie</option>                             
+                                    <option value="Brazil">Brésil</option>                                 
+                                    <option value="Canada">Canada</option>                                  
+                                    <option value="Chile">Chilie</option>
+                                    <option value="China">Chine</option>                               
+                                    <option value="Colombia">Colombie</option>                            
+                                    <option value="Croatia">Croatie</option>
+                                    <option value="Cuba">Cuba</option>                               
+                                    <option value="Czech Republic">République Tchèque</option>
+                                    <option value="Denmark">Danemark</option>                                
+                                    <option value="Egypt">Egypte</option>                              
+                                    <option value="Finland">Finlande</option>
+                                    <option value="France">France</option>                             
+                                    <option value="Germany">Allemagne</option>                             
+                                    <option value="Guadeloupe">Guadeloupe</option>                                                                                     
+                                    <option value="India">Inde</option>
+                                    <option value="Indonesia">Indonesie</option>                                  
+                                    <option value="Ireland">Irelande</option>      
+                                    <option value="Italy">Italie</option>
+                                    <option value="Jamaica">Jamaique</option>
+                                    <option value="Japan">Japan</option>             
+                                    <option value="Lithuania">Lithuanie</option>
+                                    <option value="Luxembourg">Luxembourg</option>                                
+                                    <option value="Mexico">Mexique</option>                               
+                                    <option value="Monaco">Monaco</option>                              
+                                    <option value="Philippines">Philippines</option>                             
+                                    <option value="Poland">Pologne</option>
+                                    <option value="Portugal">Portugal</option>                                  
+                                    <option value="Reunion">Reunion</option>                  
+                                    <option value="Spain">Espagne</option>                                
+                                    <option value="Sweden">Suède</option>
+                                    <option value="Switzerland">Suisse</option>                         
+                                    <option value="United Kingdom">Royaume-Uni</option>
+                                    <option value="United States">Etat-Unis</option>                  
+                                </select>                             
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="number" name="numero" id="numero" placeholder="Numéro"/>
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="date" name="date_de_naissance" id="date_de_naissance" placeholder="Date de naissance"/>
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="text" name="agence" id="agence" placeholder="Nom d'agence"/>
+                            </div>
+							<button href="accueil.html" type="submit" class="btn btn-primary btn-block form">S'inscrire</button>							
+					</form>
+			</section>
+		</section>
+	</section>
+
+
+
+{% include 'footer.html.twig' %}

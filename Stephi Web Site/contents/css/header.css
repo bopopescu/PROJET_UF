@@ -1,0 +1,21 @@
+.navbar{
+	background-color: orange !important;
+	margin-bottom: 100px;
+}
+
+.dropdown-menu{
+	float: right;
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+
+.dropdown-menu a:hover{
+	background-color: orange;
+}
+.dropdown:hover .dropdown-menu {display: block;}
+
+
+.logo {
+	width: 50px;
+}

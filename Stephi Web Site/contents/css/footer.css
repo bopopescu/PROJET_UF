@@ -1,0 +1,16 @@
+#footer_content {
+    background-color: lightgrey;
+    padding: 15px;
+    text-align: center;
+    margin-top: 115px;
+}
+.socialfooter a{
+    font-size: 2em;
+    color: #ffffff;
+}
+.socialfooter a:hover{
+    font-size: 2em;
+    color: orange;
+}
+
+
