@@ -3,6 +3,8 @@
     padding: 15px;
     text-align: center;
     margin-top: 150px;
+    bottom: 0px;
+    width: 100%;
     
 }
 .socialfooter a{
@@ -14,4 +16,12 @@
     color: orange;
 }
 
+
+
+@media screen and (max-width: 770px) {
+    #footer_content {
+        
+
+    }
+}
 

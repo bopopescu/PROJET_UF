@@ -1,0 +1,33 @@
+{% include 'header.html.twig' %}
+
+<section class="container-fluid">		
+		<section class="row justify-content-center">
+		    <section class="col-12 col-sm-12 col-md-6">
+                <h1 class="text-center text_oublie">Dépôt d'une annonce</h1>
+					<form class="form-container" method="post" action="" enctype="multipart/form-data">							
+							<div class="form-group"> 
+                                <label for="titre" class="label_depot_annonce">Titre</label>                            
+                                <input class="form-control" name="titre" type="text" id="titre" placeholder="Titre de la annonce.."/>                           
+                            </div>
+							<div class="form-group">
+                                <label for="img" class="label_depot_annonce">Choississez vos images</label>
+                                <input class="form-control" type="file" id="img" name="img" accept="image/png, image/jpeg">
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="label_depot_annonce">Description</label> 
+								<input class="form-control" type="text" name="description" id="description" placeholder="Décrivez votre annonce ici..."/>
+                            </div>
+                            <div class="form-group inscription">
+                                <label for="agence" class="label_depot_annonce">Agence</label>        
+                                <input class="form-control" type="text" name="agence" id="agence" placeholder="Ville de l'agence"/>
+                                
+                            </div>               
+							<button href="accueil.php" type="submit" class="btn btn-primary btn-block form">Ajouter</button>							
+					</form>
+			</section>
+		</section>
+	</section>
+
+
+
+{% include 'footer.html.twig' %}
