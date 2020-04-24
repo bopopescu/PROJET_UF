@@ -5,7 +5,7 @@
     margin-top: 150px;
     bottom: 0px;
     width: 100%;
-    
+    position: relative;    
 }
 .socialfooter a{
     font-size: 2em;

@@ -5,36 +5,43 @@
 		<section class="row justify-content-center">
 		    <section class="col-12 col-sm-12 col-md-6">
 				<img src="../contents/img/form_user/login.png" class="imglogin">
-					<form class="form-container" method="post" action="">							
+					<form class="form-container" method="post" action="inscription.php">							
 						<h4 class="text-center font-weight-bold">Inscription</h4>
 							<div class="form-group">                             
-                                <input class="form-control" type="text" name="nom"  id="nom" placeholder="Nom"/>                           
+                                <input class="form-control" type="text" name="nom"  id="nom" placeholder="Nom" required/>                           
 							</div>
 							<div class="form-group">
-								<input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prénom"/>
+								<input class="form-control" type="text" name="prenom" id="prenom" placeholder="Prénom" required/>
                             </div>
                             <div class="form-group">
-								<input class="form-control" type="email" name="email" id="email" placeholder="Email"/>
+								<input class="form-control" type="email" name="email" id="email" placeholder="Email" required/>
                             </div>
                             <div class="form-group">
-								<input class="form-control" type="password" name="password" id="password" placeholder="Mot de passe"/>
+								<input class="form-control" type="password" name="password" id="password" placeholder="Mot de passe" required/>
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="password" name="repeatpassword" id="repeatpassword" placeholder="Répétez votre mot de passe" required/>
                             </div>
                             <div class="form-group inscription">
                                 <label for="male">Civilité :</label>        
-                                <input class="form-control" type="radio" Name="male"   id="male" Value="Male">
+                                <input class="form-control" type="radio" Name="genre"   id="Homme" Value="Homme" required>
                                 <label for="female">Mr.</label>
-                                <input class="form-control" type="radio" Name="female"  id="female" Value="Female">
+                                <input class="form-control" type="radio" Name="genre"  id="Femme" Value="Femme" required>
                                 <label for="gender">Mlle.</label>
                             </div>
                             <div class="form-group">
-								<input class="form-control" type="text" name="adresse" id="adresse" placeholder="Adresse"/>
+								<input class="form-control" type="text" name="adresse" id="adresse" placeholder="Adresse" required/>
                             </div>
                             <div class="form-group">
-								<input class="form-control" type="number" name="code_postal" id="code_postal" placeholder="Code postal"/>
+								<input class="form-control" type="number" name="code_postal" id="code_postal" placeholder="Code postal" required/>
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" type="text" name="ville" id="ville" placeholder="Ville" required/>
                             </div>
                             <div class="form-group">
                                 <label for="pays">Pays :</label>      
-                                <select id="pays" name="pays" class="selectpicker">                                           
+                                <select id="pays" name="pays" class="selectpicker" required>
+                                    <option value=""></option>                                         
                                     <option value="Argentina">Argentine</option>        
                                     <option value="Australia">Australie</option>     
                                     <option value="Belgium">Belgique</option>   
@@ -76,20 +83,19 @@
                                 </select>                             
                             </div>
                             <div class="form-group">
-								<input class="form-control" type="number" name="numero" id="numero" placeholder="Numéro"/>
+								<input class="form-control" type="number" name="numero" id="numero" placeholder="Numéro" required/>
                             </div>
                             <div class="form-group">
-								<input class="form-control" type="date" name="date_de_naissance" id="date_de_naissance" placeholder="Date de naissance"/>
+								<input class="form-control" type="date" name="date_de_naissance" id="date_de_naissance" placeholder="Date de naissance" required/>
                             </div>
                             <div class="form-group">
-								<input class="form-control" type="text" name="agence" id="agence" placeholder="Ville de l'agence "/>
+								<input class="form-control" type="text" name="agence" id="agence" placeholder="Ville de l'agence" required/>
                             </div>
-							<button href="accueil.html" type="submit" class="btn btn-primary btn-block form">S'inscrire</button>							
+							<button href="accueil.html" name="submit" type="submit" class="btn btn-primary btn-block form">S'inscrire</button>							
 					</form>
 			</section>
 		</section>
 	</section>
-
 
 
 {% include 'footer.html.twig' %}
