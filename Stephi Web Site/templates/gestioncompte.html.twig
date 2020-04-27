@@ -1,0 +1,51 @@
+{% include 'header.html.twig' %}
+
+
+    <section class="container-fluid">		
+		<section class="row justify-content-center">
+		    <section class="col-12 col-sm-12 col-md-12">
+                <div>
+                    <h1 class="title_gestioncompte">Gestion de compte</h1>	
+                </div>
+            </section>
+        </section>
+        <section class="row justify-content-center">
+                <section class="col-12 col-sm-12 col-md-6 col-xs-12 col-xl-6">
+                    <div>
+                        <p>Informations du clients</p>
+                    </div>
+                </section>
+                <section class="col-12 col-sm-12 col-md-6 col-xs-12 col-xl-6">
+                    <form class="form-contain justify-content">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="mail">Email :</label>
+                            <input class="form-control" name="mail" type="mail" id="mail" placeholder="Adresse Email"/>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="adresse" id="adresse" placeholder="Adresse" autocomplete="off" required/>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="number" name="code_postal" id="code_postal" placeholder="Code postal" autocomplete="off" required/>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="ville" id="ville" placeholder="Ville" autocomplete="off" required/>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="number" name="numero" id="numero" placeholder="Numéro" autocomplete="off" required/>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="agence" id="agence" placeholder="Ville de l'agence" autocomplete="off" required/>
+                        </div>
+                        <div class="form-group">
+                            <button href="accueil.php" name="submit" type="submit" class="btn btn-primary btn-block form">Mettre à jour</button>
+                        </div>                                                            
+                    </form>
+                </section>
+            </section>
+        </section>
+    </section>
+
+
+
+{% include 'footer.html.twig' %}

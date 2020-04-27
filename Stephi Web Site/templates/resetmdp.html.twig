@@ -1,0 +1,33 @@
+{% include 'header.html.twig' %}
+
+    <section class="container-fluid mdpoublie_content">		
+		<section class="row justify-content-center">
+			<section class="col-12 col-sm-12 col-md-6">
+                <h1 class="text-center text_oublie"> Mot de passe oublié ?</h1>
+                 <p class="text-center">Rentrez votre nouveau mot de passe</p>
+					<form class="form-contain justify-content-center">
+						<div class="form-group">
+                            <div class="form-group">
+                                <label for="mail">Email :</label>
+                                <input class="form-control" name="mail" type="mail" id="mail" placeholder="Adresse Email"/>
+                            </div>
+                            <div>
+                                <label for="password">Mot de passes :</label>
+                                <input class="form-control" name="password" type="password" id="password" placeholder="Mot de passe"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">Rentrez à nouveau votre mot de passe :</label>
+                                <input class="form-control" name="password" type="password" id="password" placeholder="Mot de passe"/>
+                            </div>
+                            <div class="form-group">
+                                <button href="accueil.php" name="submit" type="submit" class="btn btn-primary btn-block form">Réinitialiser</button>
+                            </div>
+                        </div>																				
+					</form>
+			</section>
+		</section>
+	</section>
+
+
+
+{% include 'footer.html.twig' %}
