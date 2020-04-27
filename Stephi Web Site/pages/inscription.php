@@ -43,7 +43,8 @@ if (isset($_POST['submit']))
                 /* execute et affiche l'erreur mysql si elle se produit */
                 if (!$pdo->query($sql))
                 {
-                    printf("Message d'erreur : %s\n", $pdo->error);
+
+                   echo "<script>alert('Message d'erreur : %s\n', $pdo->error)</script>";
                 }
             // on ferme la connexion
             mysqli_close($pdo);
@@ -53,8 +54,13 @@ if (isset($_POST['submit']))
         else echo $error2;
     }
     else echo $error3; 
-} 
-echo $succes;
+
+echo $succes; 
+}
+
+
+
+
 
 
 
