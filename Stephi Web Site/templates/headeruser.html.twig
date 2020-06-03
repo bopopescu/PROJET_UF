@@ -9,8 +9,6 @@
 	<meta name="keywords"  content=",Stephi Place WEB,Annonces,Immobilier,HTML,CSS,JS,Responsive, PROJET UF">
 	<meta title="Stephi Web Place">
 
-	<meta http-equiv=”refresh” content=”60; http://localhost/PROJET_UF/Stephi%20Web%20Site/pages/inscription.php” />
-
 	<!-- ===== Fichier CSS / Font Awesome ===== -->
 	<link role="link" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
@@ -51,43 +49,13 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#"> Rechercher </a>
-					</li>
-					{#<div class="login_users">
-						{%	if session_status() !== PHP_SESSION_ACTIVE %}
-							session_start(); 
-						{% if isset{{session.user}} %}	
-						?>
-						<div class="logged">
-							<li class="nav-item">
-								<a class="nav-link" href="gestioncompte.php">{% user.prenom %}</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="inscription.php"> Se déconnecter</a>
-							</li>
-						<div>
-						{% else %}
-						<div class="login">
-							<li class="nav-item">
-								<a class="nav-link" href="connection.php"> Se connecter</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="inscription.php"> Inscription</a>
-							</li>
-						</div>#}
-                    <li class="nav-item">
-                        <a class="nav-link" href="connexion.php"> Connexion </a>
                     </li>
+					
                     <li class="nav-item">
-                        <a class="nav-link" href="inscription.php"> Inscription</a>
+                        <a class="nav-link" href="accueil.php">Se déconnecter</a>
                     </li>
                 </ul>
             </div>
         </div>
   	</nav>
-
-
-
-
-
-
 

@@ -19,27 +19,27 @@
 
 <?php
 
+$errorconnection = "<script>alert('Mot de passe ou email incorrect')</script>";
 
 if (isset($_POST["submit"])) {
     $mail = $_POST["mail"];
     $password = $_POST["password"];
 
-    $sql = "SELECT mdp FROM client where mail = '" . $mail . "' ";
-    $statement = $pdo->query($sql);
-    $credentials = $statement->fetch(PDO::FETCH_ASSOC);
-   
-    if ($credentials) { // Record found.
-        $hash = $credentials['mdp'];
+    $reponse = $pdo->prepare("SELECT mdp FROM client WHERE mail = :mail");
+    $reponse->execute(array('mail' => $mail));
 
-        // Compare the posted password with the password hash fetched from db.
-        if (password_verify($password, $hash)) {
-            echo "Bienvenu";
-        } else {
-            echo "Mauvais mdp";
-        }
-    } else {
-        echo 'Compte non trouvé';
+ 
+    while ($donnees = $reponse -> fetch()) {
+        $password_hash = $donnees['mdp'];
     }
-}
+    // Compare the posted password with the password hash fetched from db.
+    if (password_verify($password, $password_hash)) {
+            $_SESSION['user']= $mail;
+            header('Location: accueil.php');
+        } else echo $errorconnection;
+            
+        
+    } 
+    
 ?>
 

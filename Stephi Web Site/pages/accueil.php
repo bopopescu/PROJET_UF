@@ -19,6 +19,7 @@
 ?>
 
 <?php
+        
         //On créé la requête
         $sql = "SELECT * FROM annonce";
         /* execute et affiche l'erreur mysql si elle se produit */
